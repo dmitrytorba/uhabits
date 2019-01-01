@@ -96,6 +96,7 @@ dependencies {
     compile 'com.opencsv:opencsv:3.7'
     compile 'org.apmem.tools:layouts:1.10@aar'
     compile 'org.jetbrains:annotations-java5:15.0'
+    implementation 'com.firebaseui:firebase-ui-auth:4.3.0'
 
     provided 'javax.annotation:jsr250-api:1.0'
 
@@ -128,7 +129,7 @@ jacoco {
 
 task coverageReport(type: JacocoReport, dependsOn: ['testDebugUnitTest']) {
 
-    jacocoClasspath = configurations['androidJacocoAnt']
+    jacocoClasspath = configurations['jacocoAnt']
 
     reports {
         html.enabled = true

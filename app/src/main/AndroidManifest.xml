@@ -18,12 +18,14 @@
   ~ with this program. If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<manifest
-    package="org.isoron.uhabits"
+<manifest package="org.isoron.uhabits"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:versionCode="36"
-    android:versionName="1.7.9">
+    android:versionName="1.7.9"
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <!--<uses-sdk tools:overrideLibrary="com.firebase.ui.auth" />
+    -->
     <uses-permission android:name="android.permission.VIBRATE"/>
 
     <uses-permission
