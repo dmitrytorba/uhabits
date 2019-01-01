@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "826281549662",
+    "firebase_url": "https://habits-cd935.firebaseio.com",
+    "project_id": "habits-cd935",
+    "storage_bucket": "habits-cd935.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826281549662:android:c24ac74afee79412",
+        "android_client_info": {
+          "package_name": "org.isoron.uhabits"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826281549662-3k6odlh3mm58ev9fok9b74ivr4035g1g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.isoron.uhabits",
+            "certificate_hash": "0183cc80ce196af8a43f2d61ab6e4ad329cfba79"
+          }
+        },
+        {
+          "client_id": "826281549662-4u4mgfrglk3abggoisfnt2p6o9okq0or.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkYgth8hyBbQcnGOR5kbX7C5B21W9_tWY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826281549662-4u4mgfrglk3abggoisfnt2p6o9okq0or.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

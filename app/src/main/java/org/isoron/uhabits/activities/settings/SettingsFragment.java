@@ -63,6 +63,7 @@ public class SettingsFragment extends PreferenceFragmentCompat
         setResultOnPreferenceClick("exportDB", ListHabitsScreen.RESULT_EXPORT_DB);
         setResultOnPreferenceClick("repairDB", ListHabitsScreen.RESULT_REPAIR_DB);
         setResultOnPreferenceClick("bugReport", ListHabitsScreen.RESULT_BUG_REPORT);
+        setResultOnPreferenceClick("syncDB", ListHabitsScreen.RESULT_SYNC_DB);
 
         updateRingtoneDescription();
 
@@ -134,7 +135,7 @@ public class SettingsFragment extends PreferenceFragmentCompat
     {
         Preference pref = findPreference(key);
         pref.setOnPreferenceClickListener(preference -> {
-            getActivity().setResult(result);
+            getActivity().setResult(    result);
             getActivity().finish();
             return true;
         });

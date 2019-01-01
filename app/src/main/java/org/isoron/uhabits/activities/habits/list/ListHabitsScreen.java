@@ -60,6 +60,8 @@ public class ListHabitsScreen extends BaseScreen
 
     public static final int REQUEST_SETTINGS = 7;
 
+    public static final int RESULT_SYNC_DB = 8;
+
     @Nullable
     private ListHabitsController controller;
 
@@ -167,6 +169,10 @@ public class ListHabitsScreen extends BaseScreen
 
             case RESULT_REPAIR_DB:
                 controller.onRepairDB();
+                break;
+
+            case RESULT_SYNC_DB:
+                controller.onSyncDB();
                 break;
         }
     }

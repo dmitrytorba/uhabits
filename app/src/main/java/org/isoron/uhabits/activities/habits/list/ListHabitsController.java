@@ -21,6 +21,8 @@ package org.isoron.uhabits.activities.habits.list;
 
 import android.support.annotation.*;
 
+import com.firebase.ui.auth.AuthUI;
+
 import org.isoron.uhabits.*;
 import org.isoron.uhabits.activities.*;
 import org.isoron.uhabits.activities.habits.list.controllers.*;
@@ -220,5 +222,20 @@ public class ListHabitsController
     public interface OnFinishedListener
     {
         void onFinish();
+    }
+
+    public void onSyncDB()
+    {
+        // Choose authentication providers
+        List<AuthUI.IdpConfig> providers = Arrays.asList(
+                new AuthUI.IdpConfig.GoogleBuilder().build());
+
+        // Create and launch sign-in intent
+        startActivityForResult(
+                AuthUI.getInstance()
+                        .createSignInIntentBuilder()
+                        .setAvailableProviders(providers)
+                        .build(),
+                RC_SIGN_IN);
     }
 }

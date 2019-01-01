@@ -78,7 +78,11 @@
     <PreferenceCategory
         android:key="databaseCategory"
         android:title="Database">
-
+        <Preference
+            android:key="syncDB"
+            android:summary="Login to sync habits across devices and the web client."
+            android:title="Sync with web server">
+        </Preference>
         <Preference
             android:key="exportDB"
             android:summary="@string/export_full_backup_summary"
