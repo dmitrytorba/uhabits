@@ -121,7 +121,7 @@ public class MemoryHabitList extends HabitList
     private Comparator<Habit> getComparatorByOrder(Order order)
     {
         Comparator<Habit> nameComparator =
-            (h1, h2) -> h1.getName().compareTo(h2.getName());
+            (h1, h2) -> h1.getName().toLowerCase().compareTo(h2.getName().toLowerCase());
 
         Comparator<Habit> colorComparator = (h1, h2) ->
         {
